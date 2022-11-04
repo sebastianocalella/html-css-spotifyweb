@@ -163,11 +163,10 @@ main{
 
 main .content{
     width: calc(100vw - 200px);
-    height: 20px;
     margin-top: 60px;
 }
 
-main .content nav{
+main .content nav ul{
     width: 55%;
     margin: 0 auto;
     padding: 1rem 0;
@@ -269,5 +268,23 @@ QUERY INDICATIONS desktop to mobile
 
     .upgrade-bar{
         width: calc(100vw - 40px);
+    }
+
+    main .content{
+        width: calc(100vw - 40px);
+        margin-top: 60px;
+    }
+
+    main .content nav:first-child ul{
+        width: 90%;
+        flex-wrap: wrap;
+        min-width: 200px;
+        justify-content: space-evenly;
+    }
+
+    main .content nav li{
+        width: 21%;
+        margin-bottom: 16px;
+        min-width: 90px;
     }
 }
