@@ -8,10 +8,30 @@
     box-sizing: border-box;
 }
 
+li{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 /*standards*/
 
 .flex{
     display: flex;
+}
+
+.fl-column{
+    flex-direction: column;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
 }
 
 /*utilities*/
@@ -44,6 +64,68 @@ header{
     left: 0;
     width: 200px;
     height: calc(100vh - 80px);
+    color: #808080;
+    font-size: .8rem;
+    line-height: 2rem;
+    min-height: 550px;
+}
+
+header img{
+    width: 70%;
+    padding: 20px 0 10px 20px;
+}
+
+header hr{
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    border: none;
+    height: 1px;
+    background-color: #808080;
+}
+
+header h2,
+header li,
+header span{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header nav .dashboard i{
+    font-size: 1.2rem;
+}
+
+header nav .dashboard ul li:first-child{
+    color: #d2d2d2;
+    border-left: 2px solid #adff2f;
+}
+
+header h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+header nav .playlist button{
+    background-color: black;
+    border: none;
+    color: inherit;
+}
+
+header nav .playlist i{
+    font-size: 2.2rem;
+    vertical-align: middle;
+}
+
+header .account{
+    bottom: 20px;
+    left: 0;
+}
+
+header .account h2 i{
+    display: inline-block;
+    padding: 4px;
+    background-color:#808080;
+    border-radius: 50%;
 }
 
 main{
