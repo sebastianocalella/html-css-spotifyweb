@@ -8,6 +8,12 @@
     box-sizing: border-box;
 }
 
+/*standards*/
+
+.flex{
+    display: flex;
+}
+
 /*utilities*/
 
 .bg-black{
@@ -34,6 +40,8 @@ PAGE INSTRUCTIONS
 
 header{
     position: fixed;
+    top: 0;
+    left: 0;
     width: 200px;
     height: calc(100vh - 80px);
 }
@@ -41,7 +49,22 @@ header{
 main{
     width: calc(100vw - 200px);
     margin-left: 200px;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 140px);
+}
+
+.upgrade-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: calc(100vw - 200px);
+    text-align: end;
+}
+
+main .content{
+    width: calc(100vw - 200px);
+    height: 20px;
+    margin-top: 60px;
 }
 
 footer{
