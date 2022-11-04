@@ -161,6 +161,21 @@ main{
     margin: 16px 16px 0 0;
 }
 
+main h2{
+    color: white;
+    padding: 20px 30px 0;
+}
+
+main section>span{
+    margin-left: 30px;
+}
+
+main span{
+    color: #808080;
+    font-size: .6rem;
+    font-weight: bold;
+}
+
 main .content{
     width: calc(100vw - 200px);
     margin-top: 60px;
@@ -178,34 +193,35 @@ main .content nav ul{
     min-width: 440px;
 }
 
-main .recently-played h2{
-    color: white;
-    padding: 20px 30px;
-}
-
-main .recently-played .albums{
+main .albums{
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 30px;
+    max-width: 1750px;
 }
 
-main .recently-played .album{
+main .album{
     width: 15%;
     text-align: center;
+    max-width: 240px;
 }
 
-main .recently-played .album img{
+main .album img{
     width: 100%;
 }
 
-main .recently-played .album h3{
+main .album h3{
     color: white;
     font-size: .8rem;
 }
 
-main .recently-played .album span{
-    color: #808080;
-    font-size: .6rem;
+main .selected-for-user .albums{
+    justify-content: flex-start;
 }
+
+main .selected-for-user .album{
+    margin-right: 2%;
+}
+
 
 footer{
     position: fixed;
