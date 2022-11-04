@@ -61,6 +61,16 @@ main{
     text-align: end;
 }
 
+.upgrade-bar button{
+    color: white;
+    text-transform: uppercase;
+    background-color: #080b12;
+    border: 1px solid white;
+    padding: 5px 20px;
+    border-radius: 18px;
+    margin: 16px 16px 0 0;
+}
+
 main .content{
     width: calc(100vw - 200px);
     height: 20px;
