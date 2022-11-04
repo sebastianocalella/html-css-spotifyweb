@@ -139,7 +139,8 @@ header .account h2 i{
 main{
     width: calc(100vw - 200px);
     margin-left: 200px;
-    height: calc(100vh - 140px);
+    height: calc(100% - 140px);
+    margin-bottom: 80px;
 }
 
 .upgrade-bar{
@@ -225,6 +226,8 @@ main .selected-for-user .album{
 
 footer{
     position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100vw;
     height: 80px;
 }
