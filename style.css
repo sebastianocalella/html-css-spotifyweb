@@ -215,12 +215,18 @@ main .album h3{
     font-size: .8rem;
 }
 
-main .selected-for-user .albums{
+main .selected-for-user .albums,
+main .popular-artists .albums{
     justify-content: flex-start;
 }
 
-main .selected-for-user .album{
+main .selected-for-user .album,
+main .popular-artists .album{
     margin-right: 2%;
+}
+
+main .popular-artists img{
+    border-radius: 50%;
 }
 
 
