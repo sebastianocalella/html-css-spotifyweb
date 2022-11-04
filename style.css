@@ -167,6 +167,47 @@ main .content{
     margin-top: 60px;
 }
 
+main .content nav{
+    width: 55%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    justify-content: space-between;
+    font-size: .7rem;
+    color: #808080;
+    text-transform: uppercase;
+    font-weight: bold;
+    min-width: 440px;
+}
+
+main .recently-played h2{
+    color: white;
+    padding: 20px 30px;
+}
+
+main .recently-played .albums{
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+main .recently-played .album{
+    width: 15%;
+    text-align: center;
+}
+
+main .recently-played .album img{
+    width: 100%;
+}
+
+main .recently-played .album h3{
+    color: white;
+    font-size: .8rem;
+}
+
+main .recently-played .album span{
+    color: #808080;
+    font-size: .6rem;
+}
+
 footer{
     position: fixed;
     width: 100vw;
