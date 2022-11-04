@@ -70,9 +70,17 @@ header{
     min-height: 550px;
 }
 
-header img{
+header .mobile{
+    display: none;
+}
+
+header img:first-child{
     width: 70%;
     padding: 20px 0 10px 20px;
+}
+
+header img:nth-child(2){
+    display: none;
 }
 
 header hr{
@@ -163,4 +171,62 @@ footer{
     position: fixed;
     width: 100vw;
     height: 80px;
+}
+
+
+/*---------------------------------
+
+QUERY INDICATIONS desktop to mobile
+
+---------------------------------*/
+
+@media screen and (max-width: 576px) {
+
+    header{
+        width: 40px;
+    }
+
+    header img:first-child{
+        display: none;
+    }
+
+    header img:nth-child(2){
+        display: block;
+        width: 70%;
+        margin: 10px auto 25px;
+    }
+
+    header nav .dashboard ul:first-child,
+    header nav .playlist ul,
+    header span,
+    header h2,
+    header hr{
+        display: none;
+    }
+
+    header .mobile{
+        display: block;
+    }
+
+    header li{
+        padding-left: 10px;
+    }
+
+    header nav .dashboard ul li:first-child{
+        color: #d2d2d2;
+        border-left: none;
+    }
+
+    header .account{
+        font-size: 1.2rem;
+    }
+
+    main{
+        width: calc(100vw - 40px);
+        margin-left: 40px;
+    }
+
+    .upgrade-bar{
+        width: calc(100vw - 40px);
+    }
 }
