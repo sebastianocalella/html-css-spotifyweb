@@ -1,0 +1,51 @@
+/*RESET*/
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*utilities*/
+
+.bg-black{
+    background-color: black;
+}
+
+.bg-main-gray{
+    background-color: #141922;
+}
+
+.bg-main-darkgray{
+    background-color: #080b12;
+}
+
+.bg-footer-gray{
+    background-color: #282828;
+}
+
+/*--------------------------
+
+PAGE INSTRUCTIONS
+
+--------------------------*/
+
+header{
+    position: fixed;
+    width: 200px;
+    height: calc(100vh - 80px);
+}
+
+main{
+    width: calc(100vw - 200px);
+    margin-left: 200px;
+    height: calc(100vh - 80px);
+}
+
+footer{
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+}
