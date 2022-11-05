@@ -72,6 +72,12 @@ header{
     min-height: 590px;
 }
 
+li:hover,
+header span:hover{
+    color: white;
+    cursor: pointer;
+}
+
 header .mobile{
     display: none;
 }
@@ -258,6 +264,12 @@ footer{
 footer .current-song{
     width: 185px;
     justify-content: space-between;
+}
+
+footer .current-song span:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 footer h3{
