@@ -196,6 +196,16 @@ main .content nav ul{
     min-width: 440px;
 }
 
+main .content nav li:first-child::after{
+    content: "";
+    display: block;
+    margin-left: 20px;
+    width: 32px;
+    margin-top: 4px;
+    height: 3px;
+    background-color: #adff2f;
+}
+
 main .albums{
     justify-content: space-between;
     padding: 30px;
@@ -224,7 +234,8 @@ main .popular-artists .albums{
 
 main .selected-for-user .album,
 main .popular-artists .album{
-    margin-right: 2%;
+    margin-right: 5%;
+    min-width: 150px;
 }
 
 main .popular-artists img{
@@ -333,6 +344,67 @@ QUERY INDICATIONS desktop to mobile
 
 ---------------------------------*/
 
+@media screen and (max-width: 992px) {
+    
+    main .content nav:first-child ul{
+        width: 80%;
+        flex-wrap: wrap;
+        min-width: 200px;
+        justify-content: space-evenly;
+    }
+
+    main .content nav li{
+        width: 18%;
+        margin-bottom: 16px;
+        min-width: 90px;
+    }
+
+    main .recently-played .albums{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    main .recently-played .album{
+        width: 21%;
+        margin-right: calc(16% / 3);
+        margin-bottom: 25px;
+    }
+
+    main .recently-played .album:nth-of-type(4){
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    main .content nav:first-child ul{
+        width: 80%;
+        flex-wrap: wrap;
+        min-width: 200px;
+        justify-content: space-evenly;
+    }
+
+    main .content nav li{
+        width: 30%;
+        margin-bottom: 16px;
+        min-width: 90px;
+    }
+
+    main .recently-played .albums{
+        justify-content: space-between;
+    }
+
+    main .recently-played .album{
+        width: 45%;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    footer .current-song ul{
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 576px) {
 
     header{
@@ -399,5 +471,15 @@ QUERY INDICATIONS desktop to mobile
         width: 21%;
         margin-bottom: 16px;
         min-width: 90px;
+    }
+
+    main .selected-for-user .album,
+    main .popular-artists .album{
+        margin-right: 5%;
+        min-width: 100px;
+    }
+
+    footer .music-banner{
+        min-width: 200px;
     }
 }
