@@ -179,6 +179,14 @@ main{
     padding: 5px 20px;
     border-radius: 18px;
     margin: 16px 16px 0 0;
+    transition: .3s;
+}
+
+.upgrade-bar button:hover{
+    padding: 10px 30px;
+    margin: 10px 6px 0 0;
+    border: 2px solid #adff2f;
+    cursor: pointer;
 }
 
 main h2{
