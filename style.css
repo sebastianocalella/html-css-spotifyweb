@@ -262,6 +262,11 @@ main .album .square{
     transition: .2s;
 }
 
+main .popular-artists .album .square{
+    border-radius: 100px;
+    height: 97%;
+}
+
 main .album .square:hover{
     opacity: 0.75;
 }
