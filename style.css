@@ -255,10 +255,15 @@ main .album .square{
     background-color: #080b12;
     width: 100%;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0;
     color: white;
     font-size: 4rem;
     padding-top: calc(50% - 40px);
+    transition: .2s;
+}
+
+main .album .square:hover{
+    opacity: 0.75;
 }
 
 main .album h3{
